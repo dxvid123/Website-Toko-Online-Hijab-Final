@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--ICON TAB BROWSER-->
+    <link rel="icon" type="image/png" href="img/logo-website.png" />
+    <!--END ICON TAB BROWSER-->
+
+    <!--CSS UNTUK FITUR KOMENTAR-->
+    <link rel="stylesheet" href="komentar.css" />
+    <!--END CSS UNTUK FITUR KOMENTAR-->
+
+    <!--CSS UNTUK VIDEO HERO/ BANNER VIDEO-->
+    <link rel="stylesheet" href="video-banner.css" />
+    <!--END CSS UNTUK VIDEO HERO/ BANNER VIDEO-->
+
+    <!--CSS UNTUK MEMBERIKAN WARNA PADA HALAMAN BERANDA-->
+    <link rel="stylesheet" href="warna-website.css" />
+    <!--END CSS UNTUK MEMBERIKAN WARNA PADA HALAMAN BERANDA-->
+
+    <!--CSS UNTUK HOVER GAMBAR PRODUK-->
+    <link rel="stylesheet" href="produk-hover.css" />
+    <!--END CSS UNTUK HOVER GAMBAR PRODUK-->
+
+    <!--LINK TAILWIND VIA PLAY CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--END LINK TAILWIND VIA PLAY CDN-->
+    <title>Hijab Store</title>
+  </head>
+  <body id="home">
+    <!--PROMOTION -->
+    <div class="border-b border-gray-200 bg-emerald-600 px-4 py-2 text-white">
+      <p class="text-center font-medium">
+        PROMO HINGGA 60%
+        <a href="#product" class="inline-block underline">
+          Berlaku untuk hari ini!!!
+        </a>
+      </p>
+    </div>
+    <!--END PROMOTION -->
+
+    <!--NAVBAR -->
+    <header class="bg-pink-300 dark:bg-pink-300">
+      <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <!-- MENU NAVIGATION MOBILE -->
+          <div
+            id="mobile-menu"
+            class="hidden absolute right-4 top-20 z-50 w-48 md:hidden">
+            <nav>
+              <ul
+                class="flex flex-col gap-2 text-sm bg-rose-500 dark:bg-rose-500 p-4 rounded-lg shadow-lg">
+                <li>
+                  <a href="#home" class="text-gray-700 dark:text-white">Home</a>
+                </li>
+                <li>
+                  <a href="#product" class="text-gray-700 dark:text-white"
+                    >Product</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="halaman-services.html"
+                    target="_blank"
+                    class="text-gray-700 dark:text-white"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="testomini.html"
+                    target="_blank"
+                    class="text-gray-700 dark:text-white"
+                    >Testomini</a
+                  >
+                </li>
+                <li>
+                  <a href="#blog" class="text-gray-700 dark:text-white"
+                    >Footer</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://wa.me/6285835418968"
+                    target="_blank"
+                    class="text-gray-700 dark:text-white"
+                    >Chat Admin</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!--END MENU NAVIGATION MOBILE -->
+          <div class="md:flex md:items-center md:gap-12">
+            <a class="block text-teal-600 dark:text-teal-600" href="#">
+              <span class="sr-only">Home</span>
+              <h1 class="text-2xl font-bold text-indigo-400">Hijab Store</h1>
+            </a>
+          </div>
+
+          <div class="hidden md:block">
+            <nav aria-label="Global">
+              <ul class="flex items-center gap-6 text-sm">
+                <li>
+                  <a
+                    class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                    href="#home">
+                    Home
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                    href="#product">
+                    Product
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                    href="halaman-services.html"
+                    target="_blank">
+                    Services
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                    href="testomini.html"
+                    target="_blank">
+                    Testomini
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                    href="#blog">
+                    Footer
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <div class="sm:flex sm:gap-4">
+              <a
+                class="rounded-md bg-indigo-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm dark:hover:bg-teal-500"
+                href="formLogin.html"
+                target="_blank">
+                Login
+              </a>
+            </div>
+            <div class="sm:flex sm:gap-4">
+              <a
+                class="rounded-md bg-indigo-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm dark:hover:bg-teal-500"
+                href="keranjang.html"
+                target="_blank">
+                Keranjang
+              </a>
+            </div>
+            <div class="hidden sm:flex">
+              <a
+                class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
+                href="https://wa.me/6285835418968"
+                target="_blank">
+                Chat Admin
+              </a>
+            </div>
+
+            <div class="block md:hidden">
+              <button
+                id="menu-toggle"
+                class="rounded-sm bg-rose-500 p-2 text-gray-600 transition hover:text-gray-600/75 dark:bg-rose-500 dark:text-white dark:hover:text-white/75">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--END NAVBAR -->
+    <br />
+    <!--CALL TO ACTION -->
+    <section class="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2">
+      <div class="p-8 md:p-12 lg:px-16 lg:py-24">
+        <div
+          class="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+          <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
+            Temukan Barang anda Disini
+          </h2>
+
+          <p class="hidden text-gray-500 md:mt-4 md:block">
+            Cari dan temukan barang Favorit anda disini, Produk Lengkap Murah
+            dah Kaulitas Terjamin
+          </p>
+
+          <div class="mt-4 md:mt-8">
+            <a
+              href="#product"
+              class="inline-block rounded-sm bg-rose-300 px-12 py-3 text-sm font-medium text-white transition hover:bg-rose-500 focus:ring-3 focus:ring-indigo-400 focus:outline-hidden">
+              Belanja Sekarang
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!--VIDEO BANNER UNTUK BAGIAN CALL TO ACTION-->
+      <video
+        class="video-banner h-56 w-full object-cover sm:h-full"
+        autoplay
+        loop
+        muted
+        playsinline>
+        <source src="img/video-banner.mp4" type="video/mp4" />
+        Browser Anda tidak mendukung video.
+      </video>
+    </section>
+    <!--END CALL TO ACTION -->
+
+    <!--PRODUCT LIST -->
+    <div
+      class="container grid grid-cols-5 gap-4 px-6 max-w-7xl mx-auto py-15"
+      id="product">
+      <a
+        href="deskripsi.html?name=HAMIDA HAMAYA BROKEN WHITE
+        &price=Rp419.000
+        &image=img/p1.jpg
+        &description=Abaya set eksklusif terbuat dari Arabian Premium yang ringan dan lembut, memastikan kenyamanan maksimal. Desain abaya loose dengan detail lipatan di bagian tangan memberikan sentuhan stylish. Dilengkapi resleting depan, menjadikannya busui-friendly. Dengan gaya minimalis yang chic, abaya ini sempurna untuk dikenakan saat umrah, aktivitas sehari-hari, maupun acara formal."
+        target="_blank"
+        class="product-card">
+        <div class="img-container">
+          <img
+            src="img/p1.jpg"
+            alt="gambar utama"
+            class="product-img main-img" />
+          <img
+            src="img/p1-hover.jpg"
+            alt="gambar hover"
+            class="product-img hover-img" />
+        </div>
+
+        <div class="mt-3">
+          <h3
+            class="font-medium text-gray-700 group-hover:underline group-hover:underline-offset-4">
+            HAMIDA HAMAYA BROKEN WHITE
+          </h3>
+
+          <p class="mt-1 text-sm text-rose-500">Rp419.000</p>
+        </div>
+      </a>
+      <a
+        href="deskripsi.html?name=ABAYA SET SOFT
+        &price=Rp299.000
+        &image=img/p2.jpg
+        &description=One set gamis abaya dan hijab terbaru dengan bahan airflow crinkle yang ringan dan lembut. "
+        target="_blank"
+        class="product-card">
+        <div class="img-container">
+          <img
+            src="img/p2.jpg"
+            alt="gambar utama"
+            class="product-img main-img" />
+          <img
+            src="img/p2-hover.jpg"
+            alt="gambar hover"
+            class="product-img hover-img" />
+        </div>
+
+        <div class="mt-3">
+          <h3
+            class="font-medium text-gray-700 group-hover:underline group-hover:underline-offset-4">
+            ARABIAN ABAYA SET SOFT
+          </h3>
+
+          <p class="mt-1 text-sm text-rose-500">Rp299.000</p>
+        </div>
+      </a>
+      <a
+        href="deskripsi.html?name=ABAYA SET SAGE PREMIUM
+        &price=Rp300.000
+        &image=img/p3.jpg
+        &description=One set gamis abaya dan hijab terbaru dengan bahan airflow crinkle yang ringan dan lembut."
+        target="_blank"
+        class="product-card">
+        <div class="img-container">
+          <img
+            src="img/p3.jpg"
+            alt="gambar utama"
+            class="product-img main-img" />
+          <img
+            src="img/p3-hover.jpg"
+            alt="gambar hover"
+            class="product-img hover-img" />
+        </div>
+
+        <div class="mt-3">
+          <h3
+            class="font-medium text-gray-700 group-hover:underline group-hover:underline-offset-4">
+            ABAYA SET SAGE PREMIUM
+          </h3>
+
+          <p class="mt-1 text-sm text-rose-500">Rp300.000</p>
+        </div>
+      </a>
+      <a
+        href="deskripsi.html?name=SHAMEERA PRAYER SET IN BLACK
+        &price=Rp329.000
+        &image=img/p4.jpg
+        &description=Mukena eksklusif semakin spesial bisa kembaran bareng si kecil. Terbuat dari material yang lembut dan adem menjadikan ibadahmu lebih nyaman."
+        target="_blank"
+        class="product-card">
+        <div class="img-container">
+          <img
+            src="img/p4.jpg"
+            alt="gambar utama"
+            class="product-img main-img" />
+          <img
+            src="img/p4-hover.jpg"
+            alt="gambar hover"
+            class="product-img hover-img" />
+        </div>
+
+        <div class="mt-3">
+          <h3
+            class="font-medium text-gray-700 group-hover:underline group-hover:underline-offset-4">
+            SHAMEERA PRAYER SET IN BLACK
+          </h3>
+
+          <p class="mt-1 text-sm text-rose-500">Rp329.000</p>
+        </div>
+      </a>
+      <a
+        href="deskripsi.html?name=ABAYA SET PINK PASTEL
+        &price=Rp250.000
+        &image=img/p5.jpg
+        &description=One set gamis abaya dan hijab terbaru dengan bahan airflow crinkle yang ringan dan lembut. "
+        target="_blank"
+        class="product-card">
+        <div class="img-container">
+          <img
+            src="img/p5.jpg"
+            alt="gambar utama"
+            class="product-img main-img" />
+          <img
+            src="img/p5-hover.jpg"
+            alt="gambar hover"
+            class="product-img hover-img" />
+        </div>
+
+        <div class="mt-3">
+          <h3
+            class="font-medium text-gray-700 group-hover:underline group-hover:underline-offset-4">
+            ABAYA SET PINK PASTEL PREMIUM
+          </h3>
+
+          <p class="mt-1 text-sm text-rose-500">Rp250.000</p>
+        </div>
+      </a>
+      <a
+        href="deskripsi.html?name=ABAYA SET STEEL BLUE SPECIAL
+        &price=Rp299.000
+        &image=img/p6.jpg
+        &description=One set gamis abaya dan hijab terbaru dengan bahan airflow crinkle yang ringan dan lembut."
+        target="_blank"
+        class="product-card">
+        <div class="img-container">
+          <img
+            src="img/p6.jpg"
+            alt="gambar utama"
+            class="product-img main-img" />
+          <img
+            src="img/p6-hover.jpg"
+            alt="gambar hover"
+            class="product-img hover-img" />
+        </div>
+
+        <div class="mt-3">
+          <h3
+            class="font-medium text-gray-700 group-hover:underline group-hover:underline-offset-4">
+            ABAYA SET STEEL BLUE SPECIAL
+          </h3>
+
+          <p class="mt-1 text-sm text-rose-500">Rp299.000</p>
+        </div>
+      </a>
+      <a
+        href="deskripsi.html?name=SHAMEERA PRAYER SET IN AVOCADO
+        &price=Rp329.000
+        &image=img/p7.jpg
+        &description=Mukena eksklusif semakin spesial bisa kembaran bareng si kecil. Terbuat dari material yang lembut dan adem menjadikan ibadahmu lebih nyaman."
+        target="_blank"
+        class="product-card">
+        <div class="img-container">
+          <img
+            src="img/p7.jpg"
+            alt="gambar utama"
+            class="product-img main-img" />
+          <img
+            src="img/p7-hover.jpg"
+            alt="gambar hover"
+            class="product-img hover-img" />
+        </div>
+
+        <div class="mt-3">
+          <h3
+            class="font-medium text-gray-700 group-hover:underline group-hover:underline-offset-4">
+            SHAMEERA PRAYER SET IN AVOCADO
+          </h3>
+
+          <p class="mt-1 text-sm text-rose-500">Rp329.000</p>
+        </div>
+      </a>
+      <a
+        href="deskripsi.html?name=HANIYA ABAYA SET BLACK
+        &price=Rp359.000
+        &image=img/p8.jpg
+        &description=One set gamis dan hijab dengan bahan crinkle yang ringan dan lembut. Gamis dengan variasi outline menjadikan gamis menjadi tidak monoton. "
+        target="_blank"
+        class="product-card">
+        <div class="img-container">
+          <img
+            src="img/p8.jpg"
+            alt="gambar utama"
+            class="product-img main-img" />
+          <img
+            src="img/p8-hover.jpg"
+            alt="gambar hover"
+            class="product-img hover-img" />
+        </div>
+
+        <div class="mt-3">
+          <h3
+            class="font-medium text-gray-700 group-hover:underline group-hover:underline-offset-4">
+            HANIYA ABAYA SET BLACK
+          </h3>
+
+          <p class="mt-1 text-sm text-rose-500">Rp359.000</p>
+        </div>
+      </a>
+      <a
+        href="deskripsi.html?name=SHAMEERA PRAYER SET SERIES 2 IN BLACK
+        &price=Rp399.000
+        &image=img/p9.jpg
+        &description=Mukena eksklusif dengan model terbaru dilengkapi bagian untuk lengan yang terpisah membuat ibadah semakin khusyu. Terbuat dari material yang lembut dan adem menjadikan ibadahmu lebih nyaman."
+        target="_blank"
+        class="product-card">
+        <div class="img-container">
+          <img
+            src="img/p9.jpg"
+            alt="gambar utama"
+            class="product-img main-img" />
+          <img
+            src="img/p9-hover.jpg"
+            alt="gambar hover"
+            class="product-img hover-img" />
+        </div>
+
+        <div class="mt-3">
+          <h3
+            class="font-medium text-gray-700 group-hover:underline group-hover:underline-offset-4">
+            SHAMEERA PRAYER SET SERIES 2 IN BLACK
+          </h3>
+
+          <p class="mt-1 text-sm text-rose-500">Rp399.000</p>
+        </div>
+      </a>
+      <a
+        href="deskripsi.html?name=SHAMEERA PRAYER SET IN AVOCADO
+        &price=Rp329.000
+        &image=img/p7.jpg
+        &description=Mukena eksklusif semakin spesial bisa kembaran bareng si kecil. Terbuat dari material yang lembut dan adem menjadikan ibadahmu lebih nyaman."
+        target="_blank"
+        class="product-card">
+        <div class="img-container">
+          <img
+            src="img/p7.jpg"
+            alt="gambar utama"
+            class="product-img main-img" />
+          <img
+            src="img/p7-hover.jpg"
+            alt="gambar hover"
+            class="product-img hover-img" />
+        </div>
+
+        <div class="mt-3">
+          <h3
+            class="font-medium text-gray-700 group-hover:underline group-hover:underline-offset-4">
+            SHAMEERA PRAYER SET IN AVOCADO
+          </h3>
+
+          <p class="mt-1 text-sm text-rose-500">Rp329.000</p>
+        </div>
+      </a>
+      <a
+        href="deskripsi.html?name=HANIYA ABAYA SET BLACK
+        &price=Rp359.000
+        &image=img/p8.jpg
+        &description=One set gamis dan hijab dengan bahan crinkle yang ringan dan lembut. Gamis dengan variasi outline menjadikan gamis menjadi tidak monoton. "
+        target="_blank"
+        class="product-card">
+        <div class="img-container">
+          <img
+            src="img/p8.jpg"
+            alt="gambar utama"
+            class="product-img main-img" />
+          <img
+            src="img/p8-hover.jpg"
+            alt="gambar hover"
+            class="product-img hover-img" />
+        </div>
+
+        <div class="mt-3">
+          <h3
+            class="font-medium text-gray-700 group-hover:underline group-hover:underline-offset-4">
+            HANIYA ABAYA SET BLACK
+          </h3>
+
+          <p class="mt-1 text-sm text-rose-500">Rp359.000</p>
+        </div>
+      </a>
+      <a
+        href="deskripsi.html?name=SHAMEERA PRAYER SET SERIES 2 IN BLACK
+        &price=Rp399.000
+        &image=img/p9.jpg
+        &description=Mukena eksklusif dengan model terbaru dilengkapi bagian untuk lengan yang terpisah membuat ibadah semakin khusyu. Terbuat dari material yang lembut dan adem menjadikan ibadahmu lebih nyaman."
+        target="_blank"
+        class="product-card">
+        <div class="img-container">
+          <img
+            src="img/p9.jpg"
+            alt="gambar utama"
+            class="product-img main-img" />
+          <img
+            src="img/p9-hover.jpg"
+            alt="gambar hover"
+            class="product-img hover-img" />
+        </div>
+
+        <div class="mt-3">
+          <h3
+            class="font-medium text-gray-700 group-hover:underline group-hover:underline-offset-4">
+            SHAMEERA PRAYER SET SERIES 2 IN BLACK
+          </h3>
+
+          <p class="mt-1 text-sm text-rose-500">Rp399.000</p>
+        </div>
+      </a>
+      <a
+        href="deskripsi.html?name=SHAMEERA PRAYER SET IN AVOCADO
+        &price=Rp329.000
+        &image=img/p7.jpg
+        &description=Mukena eksklusif semakin spesial bisa kembaran bareng si kecil. Terbuat dari material yang lembut dan adem menjadikan ibadahmu lebih nyaman."
+        target="_blank"
+        class="product-card">
+        <div class="img-container">
+          <img
+            src="img/p7.jpg"
+            alt="gambar utama"
+            class="product-img main-img" />
+          <img
+            src="img/p7-hover.jpg"
+            alt="gambar hover"
+            class="product-img hover-img" />
+        </div>
+
+        <div class="mt-3">
+          <h3
+            class="font-medium text-gray-700 group-hover:underline group-hover:underline-offset-4">
+            SHAMEERA PRAYER SET IN AVOCADO
+          </h3>
+
+          <p class="mt-1 text-sm text-rose-500">Rp329.000</p>
+        </div>
+      </a>
+      <a
+        href="deskripsi.html?name=HANIYA ABAYA SET BLACK
+        &price=Rp359.000
+        &image=img/p8.jpg
+        &description=One set gamis dan hijab dengan bahan crinkle yang ringan dan lembut. Gamis dengan variasi outline menjadikan gamis menjadi tidak monoton. "
+        target="_blank"
+        class="product-card">
+        <div class="img-container">
+          <img
+            src="img/p8.jpg"
+            alt="gambar utama"
+            class="product-img main-img" />
+          <img
+            src="img/p8-hover.jpg"
+            alt="gambar hover"
+            class="product-img hover-img" />
+        </div>
+
+        <div class="mt-3">
+          <h3
+            class="font-medium text-gray-700 group-hover:underline group-hover:underline-offset-4">
+            HANIYA ABAYA SET BLACK
+          </h3>
+
+          <p class="mt-1 text-sm text-rose-500">Rp359.000</p>
+        </div>
+      </a>
+      <a
+        href="deskripsi.html?name=SHAMEERA PRAYER SET SERIES 2 IN BLACK
+        &price=Rp399.000
+        &image=img/p9.jpg
+        &description=Mukena eksklusif dengan model terbaru dilengkapi bagian untuk lengan yang terpisah membuat ibadah semakin khusyu. Terbuat dari material yang lembut dan adem menjadikan ibadahmu lebih nyaman."
+        target="_blank"
+        class="product-card">
+        <div class="img-container">
+          <img
+            src="img/p9.jpg"
+            alt="gambar utama"
+            class="product-img main-img" />
+          <img
+            src="img/p9-hover.jpg"
+            alt="gambar hover"
+            class="product-img hover-img" />
+        </div>
+
+        <div class="mt-3">
+          <h3
+            class="font-medium text-gray-700 group-hover:underline group-hover:underline-offset-4">
+            SHAMEERA PRAYER SET SERIES 2 IN BLACK
+          </h3>
+
+          <p class="mt-1 text-sm text-rose-500">Rp399.000</p>
+        </div>
+      </a>
+    </div>
+    <!--END PRODUCT LIST -->
+
+    <!--FOOTER-->
+    <footer class="bg-white dark:bg-gray-900" id="blog">
+      <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="lg:flex lg:items-start lg:gap-8">
+          <div class="text-teal-600 dark:text-teal-300">
+            <a href="#home" class="text-2xl font-bold text-indigo-400"
+              >Hijab Store</a
+            >
+          </div>
+
+          <div
+            class="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
+            <div class="col-span-2">
+              <div>
+                <h2 class="text-2xl font-bold text-gray-900 dark:text-white">
+                  Terima Kasih Sudah Berbelanja!
+                </h2>
+
+                <p class="mt-4 text-gray-500 dark:text-gray-400">
+                  Ini adalah Project Kelompok dengan tugas membuat sebuah
+                  Website Belanja Online sederhana, Terima Kasih sudah
+                  mengunjungi Website kami :
+                </p>
+              </div>
+            </div>
+
+            <div class="col-span-2 lg:col-span-3 lg:flex lg:items-end">
+              <form class="w-full">
+                <label for="UserEmail" class="sr-only"> Email </label>
+                <div
+                  class="border border-gray-100 p-2 focus-within:ring-3 sm:flex sm:items-center sm:gap-4 dark:border-gray-800">
+                  <input
+                    type="email"
+                    id="UserEmail"
+                    placeholder="Masukkan Email anda"
+                    class="w-full border-none focus:border-transparent focus:ring-transparent sm:text-sm dark:bg-gray-900 dark:text-white" />
+                  <button
+                    class="mt-1 w-full bg-indigo-500 px-6 py-3 text-sm font-bold tracking-wide text-white uppercase transition-none hover:bg-teal-600 sm:mt-0 sm:w-auto sm:shrink-0">
+                    Email Admin
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-span-2 sm:col-span-1">
+              <p class="font-medium text-gray-900 dark:text-white">
+                Jangan Lupa Follow Instagram Kami
+              </p>
+
+              <ul class="mt-6 space-y-4 text-sm">
+                <li>
+                  <a
+                    href="https://www.instagram.com/david.sinurat8/"
+                    target="_blank"
+                    class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                    @david.sinurat8
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.instagram.com/jelyyfl00p/"
+                    target="_blank"
+                    class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                    @jelyyfl00p
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.instagram.com/adssntia_/"
+                    target="_blank"
+                    class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                    @adssntia_
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.instagram.com/tsyaakies/"
+                    target="_blank"
+                    class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                    @tsyaakies
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-span-2 sm:col-span-1">
+              <p class="font-medium text-gray-900 dark:text-white">
+                Nama Kelompok
+              </p>
+
+              <ul class="mt-6 space-y-4 text-sm">
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                    David Sinurat
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                    Vivie Alayda
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                    Adis Sintia
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                    Tasya Thalita
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Bagian Komentar -->
+            <div class="mt-0,5">
+              <p class="text-xl font-bold text-white mb-2">
+                Komentar Pengunjung
+              </p>
+
+              <div class="komentar-container">
+                <div id="listKomentar" class="komentar-list">
+                  <div class="komentar-item">
+                    Pelayanan Ramah dan Fastrespon
+                  </div>
+                  <div class="komentar-item">
+                    Barang-barang disini bagus dan berkaulitas
+                  </div>
+                  <div class="komentar-item">Harga murah dan terjangkau</div>
+                </div>
+              </div>
+
+              <form id="formKomentar" class="komentar-form">
+                <input
+                  type="text"
+                  id="inputKomentar"
+                  placeholder="Masukkan komentar anda"
+                  required />
+                <button type="submit">Kirim</button>
+              </form>
+            </div>
+            <!-- END Bagian Komentar -->
+          </div>
+        </div>
+
+        <div class="mt-8 border-t border-gray-100 pt-8 dark:border-gray-800">
+          <div class="sm:flex sm:justify-between">
+            <p class="text-xs text-gray-500 dark:text-gray-400">
+              &copy; 2025. Komputerisasi Akuntansi. Universitas Sriwijaya.
+            </p>
+          </div>
+        </div>
+      </div>
+      <link rel="stylesheet" href="komentar.css" />
+      <script src="komentar.js"></script>
+    </footer>
+    <!--END FOOTER-->
+
+    <!--JS AGAR NAVIGASI UNTUK HP BERFUNGSI-->
+    <script src="navbar.js"></script>
+
+    <!-- JS AGAR KOMENTER BERFUNGSI-->
+    <script src="komentar.js"></script>
+  </body>
+</html>

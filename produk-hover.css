@@ -1,0 +1,36 @@
+.img-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.product-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease-in-out;
+  top: 0;
+  left: 0;
+}
+
+/* Tampilkan gambar utama, sembunyikan gambar hover */
+.main-img {
+  z-index: 1;
+  opacity: 1;
+}
+
+.hover-img {
+  z-index: 2;
+  opacity: 0;
+}
+
+/* Saat hover ke .product-card, munculkan gambar hover */
+.product-card:hover .hover-img {
+  opacity: 1;
+}
+
+.product-card:hover .main-img {
+  opacity: 0;
+}

@@ -1,0 +1,79 @@
+/* === WARNA NAVBAR === */
+
+header {
+  background-color: #e5b5b6 !important;
+}
+
+header nav a {
+  color: #fdfaf6 !important;
+}
+
+header nav a:hover {
+  color: #fdfaf6 !important;
+  opacity: 0.75;
+}
+
+h1.text-2xl {
+  color: #90011e !important;
+}
+
+/* === TOMBOL LOGIN DAN CHAT ADMIN === */
+header a[href="formLogin.html"],
+header a[href*="wa.me"],
+header a[href="keranjang.html"] {
+  background-color: #90011e !important;
+  color: #fdfaf6 !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header a[href="formLogin.html"]:hover,
+header a[href*="wa.me"]:hover,
+header a[href="keranjang.html"]:hover {
+  background-color: #e5b5b6 !important;
+  color: #fdfaf6 !important;
+}
+
+/* === Footer === */
+footer {
+  background-color: #e5b5b6;
+  color: #fdfaf6;
+}
+
+/* Logo di footer */
+footer .text-indigo-400 {
+  color: #90011e !important;
+}
+
+/* Heading dan teks biasa */
+footer h2,
+footer p,
+footer a {
+  color: #fdfaf6 !important;
+}
+
+/* Hover pada link */
+footer a:hover {
+  opacity: 0.85;
+}
+
+/* Tombol Email Admin dan Kirim */
+footer button {
+  background-color: #90011e;
+  color: #fdfaf6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+footer button:hover {
+  background-color: #e5b5b6;
+  color: #fdfaf6;
+  border: 1px solid #90011e;
+}
+
+/* Input komentar agar tetap terlihat */
+footer input[type="text"],
+footer input[type="email"] {
+  background-color: #ffffff;
+  color: #90011e;
+  padding: 0.5rem;
+  border-radius: 4px;
+}

@@ -1,0 +1,132 @@
+/* CSS UNTUK DESKRIPSI */
+body {
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #4a4a4a;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+/* BAGIAN GAMBAR PRODUK */
+.image-container {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #f5f5f5;
+  padding: 2rem;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 4px;
+}
+/* END BAGIAN GAMBAR PRODUK */
+
+/* BAGIAN INFORMASI PRODUK */
+.info-container {
+  flex: 1;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #555555;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.current-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ac1754;
+  margin-right: 1rem;
+}
+
+.original-price {
+  font-size: 18px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+#productDescription {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 1rem;
+}
+/* BAGIAN INFORMASI PRODUK */
+
+/* BAGIAN TOMBOL */
+.buy-button {
+  display: inline-block;
+  background-color: #e5b5b6;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.5s ease;
+  margin-top: auto;
+  cursor: pointer;
+}
+
+.buy-button:hover {
+  background-color: #90011e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* END BAGIAN TOMBOL */
+
+/* MEDIA SCREEN AGAR RESPONSIF DI SEMUA DEVICES */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .image-container {
+    padding: 1rem;
+  }
+
+  .info-container {
+    padding: 1.5rem;
+  }
+
+  .image-container img {
+    max-height: 60vh;
+  }
+}
+/* END MEDIA SCREEN AGAR RESPONSIF DI SEMUA DEVICES */

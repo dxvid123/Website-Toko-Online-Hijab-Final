@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="keranjang.css" />
+    <title>Keranjang Belanja</title>
+  </head>
+  <body>
+    <div class="keranjang-container">
+      <h1>Keranjang Belanja</h1>
+      <!-- BARU: Tambahkan checkbox untuk memilih semua item -->
+      <div class="select-all-container">
+        <input type="checkbox" id="selectAllItems" />
+        <label for="selectAllItems">Pilih Semua</label>
+      </div>
+      <div id="keranjangItems"></div>
+      <div id="totalHargaContainer">
+        <strong>Total Harga:</strong> <span id="totalHarga">Rp 0</span>
+      </div>
+      <div class="action-buttons">
+        <button id="checkoutBtn">Checkout</button>
+        <button id="clearCartBtn">Hapus Semua</button>
+      </div>
+    </div>
+    <script src="keranjang.js"></script>
+  </body>
+</html>

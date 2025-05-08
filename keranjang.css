@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+}
+
+.keranjang-container {
+  background-color: white;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* BARU: Styling untuk container pilih semua */
+.select-all-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 5px 10px;
+  background-color: #f7f7f7;
+  border-radius: 6px;
+}
+
+.select-all-container label {
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* BARU: Styling untuk checkbox di setiap item */
+.item-checkbox {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.item-info {
+  flex: 1;
+}
+
+.item-remove {
+  cursor: pointer;
+  color: red;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #e5b5b6;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #90011e;
+}
+
+/* BARU: Item yang tidak dipilih ditampilkan dengan opacity lebih rendah */
+.item.not-selected {
+  opacity: 0.6;
+}

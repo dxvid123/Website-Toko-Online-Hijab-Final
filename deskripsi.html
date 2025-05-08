@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/logo-website.png" />
+
+    <!--LINK CSS UNTUK HALAMAN DESKRIPSI-->
+    <link rel="stylesheet" href="deskripsi.css" />
+    <!--END LINK CSS UNTUK HALAMAN DESKRIPSI-->
+    <title>Detail Produk</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Gambar Produk -->
+      <div class="image-container">
+        <img id="productImage" src="" alt="Produk" />
+      </div>
+
+      <!-- Informasi Produk -->
+      <div class="info-container">
+        <h1 id="productName">Nama Produk</h1>
+
+        <!--BAGIAN YANG BERTANGGUNG JAWAB MENAMPILKAN HARGA PRODUK-->
+        <div class="price-container">
+          <!--HARGA ASLI PRODUK DARI QUERY-->
+          <span id="productPrice" class="current-price">Rp 0</span>
+          <!--END HARGA ASLI PRODUK DARI QUERY-->
+
+          <!--HARGA DEFFAULT "0" , AKAN OTOMATIS DICORET SAAT HARGA ASLI DARI QUERY TERBACA-->
+          <span id="originalPrice" class="original-price">Rp 0</span>
+          <!--END HARGA DEFFAULT "0" , AKAN OTOMATIS DICORET SAAT HARGA ASLI DARI QUERY TERBACA-->
+        </div>
+        <!--END BAGIAN YANG BERTANGGUNG JAWAB MENAMPILKAN HARGA PRODUK-->
+
+        <!--BAGIAN YANG BERTANGGUNG JAWAB UNTUK MENAMPILKAN DESKRIPSI PRODUK-->
+        <div class="product-details">
+          <h2>Deskripsi</h2>
+          <p id="productDescription">Deskripsi produk akan muncul di sini.</p>
+        </div>
+        <!--END BAGIAN YANG BERTANGGUNG JAWAB UNTUK MENAMPILKAN DESKRIPSI PRODUK-->
+
+        <!--TOMBOL BELI-->
+        <a id="buyButton" class="buy-button" href="#">Beli Sekarang</a>
+        <!--END TOMBOL BELI-->
+      </div>
+    </div>
+
+    <!--JS UNTUK DESKRIPSI-->
+    <script src="deskripsi.js"></script>
+    <!--END JS UNTUK DESKRIPSI-->
+  </body>
+</html>
